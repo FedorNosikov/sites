@@ -1,0 +1,149 @@
+<!doctype html>
+
+<html>
+	<head>
+		<title>Flexbox на практике</title>
+		<meta charset="utf-8">
+		<style>
+			body{
+				background: #fefefe; 
+				margin: 0px; 
+				padding: 0px;
+				font:1em/1.3em Arial, Tahoma, "Trebuchet MS", sans-serif;
+				color: #272727;
+			}
+			img{
+				margin: 0; 
+				padding: 0; 
+				vertical-align: middle; 
+				border: none;
+			}
+			.main{
+				margin: 20px; 
+				border: 1px solid #ccc; 
+				padding: 20px; 
+				background: #fff; 
+				border-radius: 3px;
+			}
+			.bl{
+				padding: 10px; 
+				border:1px solid #ddd; 
+				background: #fefefe; 
+				border-radius: 3px;
+				margin: 20px;
+			}
+
+.main{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	max-width: 1000px;
+	margin: 20px auto;
+	justify-content: center;
+	align-items: stretch;
+	align-content: stretch;
+	flex-flow: row wrap; 
+	
+}
+
+.bl{
+	flex: 1 1 300px;
+	text-align: center;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-flow: row wrap;
+}
+
+
+.fl1{flex:1 1 100%;}
+.fl2{}
+.fl3{}
+.fl4{}
+.fl5{}
+.fl6{flex:1 1 100%;}
+
+h3{color: #5460D3;
+margin:0 10px 0 0;
+font-size: 1.1em;
+}
+
+a.button{
+	background: #406cd0;
+	color: #fff;
+	padding: 5px 10px;
+	border-radius: 2px;
+	text-decoration: none;
+	transition: 0.3s; 
+}
+a.button:hover{
+	background: #DB0808;
+}
+
+.images{margin: 10px; flex: 1 1 200px;}
+.images img{width: 100%; height: auto;}
+.text{margin: 10px; flex:1 1 150px;}
+
+		</style>
+	</head>
+
+	<body>
+	<div class="main">
+	<div class="bl fl1">
+					<div class="images"><img src="images/cat1.jpg" alt=""></div>
+					<div class="text">
+						<h3>Lorem ipsum dolor.</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+						<a href="#" class="button">Читать...</a>
+					</div>
+				</div>
+				<div class="bl fl2">
+					<div class="images"><img src="images/cat2.jpg" alt=""></div>
+					<div class="text">
+						<h3>Quo iure, reprehenderit.</h3>
+						<p>Excepturi, dolor asperiores suscipit voluptate porro atque.</p>
+						<a href="#" class="button">Читать...</a>
+					</div>
+				</div>
+				<div class="bl fl3">
+					<div class="images"><img src="images/cat3.jpg" alt=""></div>
+					<div class="text">
+						<h3>Nihil, voluptatibus, dolor.</h3>
+						<p>Sit deserunt doloremque, quis accusantium sint, quos.</p>
+						<a href="#" class="button">Читать...</a>
+					</div>
+				</div>
+				<div class="bl fl4">
+					<div class="images"><img src="images/cat4.jpg" alt=""></div>
+					<div class="text">
+						<h3>Ab, corporis, sunt!</h3>
+						<p>Impedit rerum, quo ex, harum eaque error.</p>
+						<a href="#" class="button">Читать...</a>
+					</div>
+				</div>
+				<div class="bl fl5">
+					<div class="images"><img src="images/cat5.jpg" alt=""></div>
+					<div class="text">
+						<h3>Alias, sint, dolorum.</h3>
+						<p>Sit earum minus, provident quasi, veniam dolorem.</p>
+						<a href="#" class="button">Читать...</a>
+					</div>
+				</div>
+				<div class="bl fl6">
+					<div class="images"><img src="images/cat6.jpg" alt=""></div>
+					<div class="text">
+						<h3>Ratione, sequi, officiis?</h3>
+						<p>Libero, quas. Laudantium dolore obcaecati voluptates. Error.</p>
+						<a href="#" class="button">Читать...</a>
+					</div>
+				</div>			
+
+	</div>
+		
+	
+	</body>
+</html>

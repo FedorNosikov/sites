@@ -1,0 +1,159 @@
+body{
+	background: #41484e; 
+	margin: 1px; 
+	padding: 0;
+	font:1em/1.3em Arial, Tahoma, "Trebuchet MS", sans-serif;
+	color: #EAE0E0;
+	}
+.main{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	margin: 1px auto; 
+	border: 0px solid #ccc; 
+	padding: 1px; 
+	background: #41484e; 
+	border-radius: 3px;
+	max-height: 1000px;
+	max-width: 1900px;
+	min-width: 420px;
+	/*height: 1000px;*/
+	text-align: center;
+	
+	/*flex-direction: row;/*указывает направление по главной оси*/
+	justify-content: center;/*управляет выравниванием элементов по главной оси, определяет, как браузер распределяет пространство между и вокруг элементов контента вдоль главной оси их контейнера*/
+	align-items:stretch; /*управляет выравниванием элементов по перекрёстной оси*/
+	/*flex-wrap: wrap; /*перенос элементов*/
+	align-content: stretch;
+	flex-flow: row wrap; /*1 - justify-content, 2 - flex-wrap*/
+
+	}
+.bigblock{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	margin: 1px; 
+	border: 0px solid #ccc; 
+	padding: 1px; 
+	background: #1f2326; 
+	border-radius: 3px;
+	min-width: 100px;
+
+	flex-direction: row-reverse;
+	align-items:flex-end;
+
+	/*flex-basis: 500px;/*задает базовые размеры флекс элемента, а именно ширину.  Это свойство определяет размер содержимого контента,  если оно не было заданно свойством  box-sizing.*/
+	/*flex-grow: 1;/*определяет, какую часть свободного пространства может занять контейнер, в соотношении с другими контейнерами.*/
+	/*flex-shrink: 0; /*определяет фактор сжатия  flex-элемента. Flex-элементы будут заполнять контейнер в зависимости от значения flex-shrink, когда стандартная ширина flex-элементов шире, чем flex-контейнер*/
+	flex: 1 1 200px; /*1 - grow, 2 -shrink, 3-basis*/
+
+	}
+.logo-group{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	margin: 1px; 
+	border: 1px solid #17171A; 
+	padding: 1px; 
+	background: #1b1e21; 
+	border-radius: 3px;
+	height: 200px;
+	width: 200px;
+
+	flex-direction: column;
+	justify-content: flex-end;
+
+	
+	}
+.logo{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	margin: 1px; 
+	border: 0px solid #ccc; 
+	padding: 1px; 
+	background: #1b1e21; 
+	border-radius: 3px;
+	height: 180px;
+
+	justify-content: center;
+	-ms-align-items: center;
+	align-items: center;
+	}
+.site{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	margin: 1px; 
+	border: 0px solid #ccc; 
+	padding: 1px; 
+	background: #1b1e21; 
+	border-radius: 3px;
+	
+	flex-direction: row;
+	align-items:center;
+	justify-content: center;
+	}
+.hat{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	background: #41484e;
+	order:0;
+	flex-basis: 100%;
+	height: 50px;
+	flex-direction: row;
+	align-items:center;
+	color: #555e65;
+	}
+
+.b1{order:1;flex-basis: 45%;height: 400px;}
+.b2{order:2;flex-basis: 45%;height: 400px; 
+	display: flex; 
+	-webkit-flex-direction: row;
+	-moz-flex-direction: row;
+	-ms-flex-direction: row;
+	-o-flex-direction: row;
+	flex-direction: row;
+	color: #1b1e21;}
+.b3{order:3;flex-basis: 45%;height: 400px;
+	display: flex; 
+	-webkit-flex-direction: row;
+	-moz-flex-direction: row;
+	-ms-flex-direction: row;
+	-o-flex-direction: row;
+	flex-direction: row-reverse;
+	align-items:flex-start;
+	color: #1b1e21;}
+.b4{order:4;flex-basis: 45%;height: 400px;
+	display: flex; 
+	-webkit-flex-direction: row;
+	-moz-flex-direction: row;
+	-ms-flex-direction: row;
+	-o-flex-direction: row;
+	flex-direction: row;
+	align-items:flex-start;
+	color: #1b1e21;}
+
+.footer{
+	background: #41484e;
+	order:5;
+	flex-basis: 100%;
+	height: 100px;
+	flex-direction: row;
+	align-items:center;
+	justify-content: center;
+	color: #555e65;
+	}

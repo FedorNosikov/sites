@@ -1,0 +1,99 @@
+<!doctype html>
+
+<html>
+	<head>
+		<title>Flexbox на практике</title>
+		<meta charset="utf-8">
+		<style>
+			body{
+				background: #fefefe; 
+				margin: 0; 
+				padding: 0;
+				font:1em/1.3em Arial, Tahoma, "Trebuchet MS", sans-serif;
+				color: #272727;
+			}
+			img{
+				margin: 0; 
+				padding: 0; 
+				vertical-align: middle; 
+				border: none;
+			}
+
+			.super{
+				margin: 20px; 
+				border: 1px solid #ccc; 
+				padding: 20px; 
+				background: #fff; 
+				border-radius: 3px;
+							}
+			.main{
+				margin: 20px; 
+				border: 1px solid #ccc; 
+				padding: 20px; 
+				background: #fff; 
+				border-radius: 3px;
+							}
+			.bl{
+				padding: 5px 10px; 
+				border:1px solid #ddd; 
+				background: #fffde1; 
+				border-radius: 3px;
+				margin: 20px;
+				
+
+			}
+
+			
+			.main{
+				display: -webkit-flex;
+				display: -moz-flex;
+				display: -ms-flex;
+				display: -o-flex;
+				display: flex;
+				flex-direction: column;
+				justify-content: flex-end;
+				align-items: flex-end;
+				align-content: flex-end;
+				height: 400px;
+				max-width: 500px;
+				}
+
+
+			.super{
+				display: -webkit-flex;
+				display: -moz-flex;
+				display: -ms-flex;
+				display: -o-flex;
+				display: flex;
+				justify-content: center;
+				align-items: stretch;
+				align-content: stretch;
+				flex-flow: row wrap; 
+				 
+				}
+
+			.bl{}
+
+			.fl1{}
+			.fl2{}
+				
+		</style>
+	</head>
+
+	<body>
+	<div class="super">
+		<div class="main">
+
+			<div class="bl fl1">1</div>
+			<div class="bl fl2">2</div>
+			
+		</div>
+	
+		<div class="main"></div>
+		<div class="main"></div>
+		<div class="main"></div>
+	</div>
+
+
+	</body>
+</html>

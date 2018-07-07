@@ -1,0 +1,46 @@
+.container {
+	width: 100%;
+	max-width: 960px;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+}
+.first{
+	background: #000;
+	min-height: 430px;
+	font-size: 40px;
+	color: white;
+	flex: auto; /*Свойство CSS flex - это сокращенное 
+	свойство, определяющее способность гибкого элемента 
+	растягиваться или сжиматься для заполнения собой 
+	доступного свободного пространства. Это свойство 
+	устанавливает flex-grow, flex-shrink и flex-basis.
+
+	ПОХОЖЕ ВАЖНЫЙ МОМЕНТ, НУЖНО ПОЗАНИМАТЬСЯ
+	*/
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.c-right{
+	margin-left: 30px;
+	display: flex;
+	flex: 0 0 220px;
+	flex-direction: column;
+}
+
+.item{
+	background: #000;
+	min-height: 200px;
+	font-size: 40px;
+	color: white;
+	flex: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 30px;
+}
+.item:last-child{
+	margin-bottom: 0;
+}

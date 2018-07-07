@@ -1,0 +1,73 @@
+body{
+	background: #fefefe; 
+	margin: 0; 
+	padding: 0;
+	font:1em/1.3em Arial, Tahoma, "Trebuchet MS", sans-serif;
+	color: #272727;
+}
+img{
+	margin: 0; 
+	padding: 0; 
+	vertical-align: middle; 
+	border: none;
+}
+.main{
+	margin: 20px; 
+	border: 1px solid #ccc; 
+	padding: 20px; 
+	background: #fff; 
+	border-radius: 3px;
+}
+.bl{
+	padding: 5px 10px; 
+	border:1px solid #ddd; 
+	background: #fffde1; 
+	border-radius: 3px;
+	margin: 20px;
+}
+
+.logogroup{
+	padding: 1px 1px; 
+	border:1px solid #ddd; 
+	background: #fffde1; 
+	border-radius: 3px;
+	margin: 1px;
+}
+.logo{
+	padding: 1px 1px; 
+	border:1px solid #ddd; 
+	background: #fffde1; 
+	border-radius: 3px;
+	margin: 1px;
+}
+.site{
+	padding: 1px 1px; 
+	border:1px solid #ddd; 
+	background: #fffde1; 
+	border-radius: 3px;
+	margin: 1px;
+}
+
+.main{display: -webkit-flex;
+display: -moz-flex;
+display: -ms-flex;
+display: -o-flex;
+display: flex;
+height: 1000px;
+max-width: 1000px;
+margin: 20px auto;
+flex-direction: row;
+justify-content: flex-end;
+align-items:;
+flex-wrap: wrap;
+align-content: flex-end;}
+
+.bl{
+width: 400px;
+}
+.fl1{}
+.fl2{}
+.fl3{}
+.fl4{}
+.fl5{}
+.fl6{}

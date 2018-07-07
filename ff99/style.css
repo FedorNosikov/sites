@@ -1,0 +1,65 @@
+
+/*.item {
+	position: relative;
+	display: flex;
+	height: 516px;
+	width: 946px;
+	background: #1f2326;
+	margin: 1px;
+	align-self: stretch; //чтобы работало нужно задать высоту?
+						 // стобы работал стрэч, нужно убрать высоту item,
+						 //т.к. он растягивает во всю высоту боди	
+}
+
+.item .logo{
+	background: #1b1e21;
+	font-size: 10px;
+	/*flex: auto;*//*
+	flex-direction: column;
+	display: inline-block;
+	justify-content: center;
+	align-items: center;
+	height: 250px;
+	width: 250px;
+	margin: 10px;
+	border: 1px solid #41484e;
+	color: #41484e;
+	position:absolute;top:250px;left:680px
+	
+	}
+.item .logo .cow{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 10px;
+}
+.item .logo .site{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 16px;
+	color: #949ea7;
+}
+
+
+.container{
+	display: flex;
+	flex-shrink: 1;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: flex-end;// при одном элементе не работает нужно несколько
+	align-content: center;
+	justify-content: center;
+	align-items: center; 
+	margin-top: 50px;
+	margin-bottom: 150px;
+	
+}*/
+
+.container{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	
+}

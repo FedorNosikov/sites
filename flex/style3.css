@@ -1,0 +1,83 @@
+.top{
+	background: #000;
+	width: 100%;
+	max-width: 960px;
+	min-width: 460px;
+	min-height: 100px;
+	margin: 0 auto 40px;
+}
+
+.grid{
+	width: 100%;	
+	max-width: 960px;
+	min-width: 460px;
+	margin: 0 auto; 
+	padding: 0 30px;
+	display: flex;
+	flex-wrap: wrap;
+	box-sizing: border-box;
+}
+
+/*Согласно спецификации CSS ширина блока складывается из ширины 
+	контента (width), значений отступов (margin), полей (padding) и 
+	границ (border). Аналогично обстоит и с высотой блока. Свойство 
+	box-sizing позволяет изменить этот алгоритм, чтобы свойства width 
+	и height задавали размеры не контента, а размеры блока.
+	content-box — значение по умолчанию, соответствует стандартной 
+	блочной модели.
+	border-box — изменяет режим расчета ширины элемента на описанный 
+	выше (Проблему с шириной тянущихся полей решить сложно. Идеальным 
+	вариантом было бы изменение алгоритма расчета ширины элемента, 
+	чтобы свойство width задавало не ширину содержания, а общую ширину.).
+
+	*/
+
+
+.grid-item{
+	background: #000;
+	min-height: 200px;
+	font-size: 40px;
+	color: red;
+	margin: 0 10px 20px;
+	flex: 1 1 calc(33.33% - 20px);/*важно ставить пробелы*/
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+
+/*
+
+.top{
+	background: #000;
+	width: 100%;
+	max-width: 960px;
+	min-width: 460px;
+	min-height: 100px;
+	margin: 0 auto 40px;
+}
+.grid{
+	width: 100%;
+	max-width: 960px;
+	min-width: 460px;
+	margin: 0 auto;
+	padding: 0 30px;
+	display: flex;
+	flex-wrap: wrap;
+	box-sizing: border-box;
+
+	}
+
+.grid-item{
+	background: #000;
+	min-height: 200px;
+	font-size: 40px;
+	color: white;
+	margin: 0 10px 20px;
+	flex: 1 1  calc(33.33% - 20px);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}*/
